@@ -14,18 +14,17 @@ public class ConsumerController {
   @Autowired
   private HelloService helloService;
 
-  @GetMapping("/feign-consumer")
-  public String helloConsumer() {
-    return helloService.hello();
-  }
+//  @GetMapping("/feign-consumer")
+//  public String helloConsumer() {
+//    return helloService.hello();
+//  }
 
   @GetMapping("/feign-consumer2")
   public String helloConsumer2() {
     String delimiter = System.getProperty("line.separator");
     StringJoiner sj = new StringJoiner(delimiter);
-    sj.add(helloService.hello());
     sj.add(helloService.hello("DIDI"));
-    sj.add(helloService.hello("DIDI", 30).toString());
+    sj.add(helloService.hello("DIDI", 20).toString());
     sj.add(helloService.hello(new User("DIDI", 30)));
     return sj.toString();
   }

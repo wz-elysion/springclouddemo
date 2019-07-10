@@ -12,8 +12,8 @@ import wz_ling1991.domain.User;
 @FeignClient(value = "hello-service", configuration = FeignLogConfiguration.class)
 public interface HelloService {
 
-  @GetMapping("/hello")
-  String hello();
+//  @GetMapping("/hello")
+//  String hello();
 
   @GetMapping("/hello1")
   String hello(@RequestParam("name") String name);
