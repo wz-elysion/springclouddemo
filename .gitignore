@@ -3,3 +3,4 @@ common/target/
 eureka-server/target/
 hello-service/target/
 *.iml
+hello-service-api/target/
