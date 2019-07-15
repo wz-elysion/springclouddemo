@@ -4,3 +4,4 @@ eureka-server/target/
 hello-service/target/
 *.iml
 hello-service-api/target/
+feign-consumer/target/
