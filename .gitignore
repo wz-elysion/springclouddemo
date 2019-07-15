@@ -1,3 +1,8 @@
 .idea/
 */target/*
 *.iml
+common/target/
+eureka-server/target/
+hello-service/target/
+hello-service-api/target/
+feign-consumer/target/
